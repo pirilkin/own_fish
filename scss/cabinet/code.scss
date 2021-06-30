@@ -1,0 +1,290 @@
+.code {
+    background: $white;
+    border-radius: 0 0 60px 60px;
+    padding: 88px 0 120px;
+
+    @media (max-width: 768px) {
+        padding: 40px 0;
+    }
+
+    @media (max-width: 576px) {
+        padding: 20px 0;
+    }
+
+    &-form {
+        background: #FAF6EF;
+        border-radius: 80px;
+        height: 80px;
+        width: 615px;
+        justify-content: space-between;
+        padding: 10px;
+        margin-right: auto;
+        margin-left: auto;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 65px;
+        }
+        @media (max-width: 576px) {
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            background: none;
+        }
+
+        @media (max-width: 380px) {
+            padding: 3px;
+            // height: 29px;
+        }
+    }
+
+    &-input {
+        width: 50%;
+        border: none;
+        background: transparent;
+        padding: 17px 2px 17px 15px;
+        border-radius: 80px;
+
+        @media (max-width: 1199px) {
+            display: flex;
+            align-items: center;
+            // padding: 0;
+            padding: 15px;
+            // padding-left: 10px;
+        }
+
+        @media (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            // padding-left: 10px;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+            // font-size: 9px;
+            // line-height: 10px;
+            background: #FAF6EF;
+            border-radius: 80px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        @media (max-width: 380px) {
+            // padding: 7px;
+        }
+
+        &::placeholder {
+            font-size: 24px;
+            line-height: 28px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+                line-height: 18px;
+                // font-size: 9px;
+                // line-height: 10px;
+            }
+
+            @media (max-width: 576px) {
+                // font-size: 9px;
+                // line-height: 10px;
+            }
+        }
+
+        &:focus {
+            border: none;
+            box-shadow: none;
+            background: #FAF6EF;
+        }
+    }
+
+    &-submit {
+        padding: 0px 0px;
+        font-size: 18px;
+        line-height: 22px;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            padding: 0;
+            font-size: 14px;
+            // font-size: 9px;
+            // line-height: 10px;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+            padding: 0;
+            height: 60px;
+            // font-size: 9px;
+            // line-height: 10px;
+        }
+    }
+
+    &-content {
+        text-align: center;
+        @media (max-width: 1199px) {
+            padding: 0 25px;
+        }
+    }
+
+    &__title {
+        font-size: 42px;
+        line-height: 50px;
+        font-weight: 800;
+        margin-bottom: 14px;
+        text-transform: uppercase;
+        text-align: center;
+
+        @media (max-width: 1199px) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 22px;
+            line-height: 30px;
+        }
+
+        @media (max-width: 576px) {
+            margin-right: auto;
+            
+            margin-left: auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 27px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__number {
+        font-size: 24px;
+        line-height: 29px;
+        color: $brown-text;
+        text-transform: uppercase;
+        margin-right: 0px;
+        margin-bottom: 120px;
+
+        @media (max-width: 1199px) {
+            padding: 0 10px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-btn {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 19px 37px;
+        @media (max-width: 576px) {
+            font-size: 14px;
+            line-height: 16px;
+            padding: 15px 25px;
+        }
+    }
+
+    &-bottom__title {
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 700;
+
+        @media (max-width: 1199px) {
+            //     padding: 0 10px;
+            //    margin-bottom: 60px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-tables {
+        border-radius: 10px;
+
+        &__title {
+            background: $blue;
+            color: $white;
+        }
+
+        th {
+            @media (max-width: 576px) {
+                font-size: 14px;
+                line-height: 17px;
+                padding: 0 0 0 5px !important;
+            }
+        }
+
+        td {
+            @media (max-width: 576px) {
+                font-size: 10px;
+                line-height: 12px;
+                padding: 0 0 0 5px !important;
+            }
+        }
+
+    }
+
+    &-date {
+        max-width: 25%;
+    }
+
+    .table-code {
+        // td{
+        //     @media (max-width: 576px) {
+        //         font-size: 10px;
+        //         line-height: 12px;
+        //     }
+        //    }
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+        border: 1px solid $orange;
+    }
+
+    .paginate_button.current {
+        // color: #fff !important;
+        // background-color: #05b4df !important;
+        background: $orange !important;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+        background-color: $orange !important;
+    }
+
+    table.dataTable thead th,
+    table.dataTable thead td {
+        border-bottom: none;
+    }
+
+    table.dataTable.row-border tbody th,
+    table.dataTable.row-border tbody td,
+    table.dataTable.display tbody th,
+    table.dataTable.display tbody td {
+        border-top: none;
+        // height: 60px;
+    }
+}

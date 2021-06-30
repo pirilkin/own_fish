@@ -1,0 +1,89 @@
+.enter{
+    &-content{
+        padding-bottom: 47px;
+    }
+    &-form{
+        text-align: center;
+    }
+    &-text{
+        margin: 21px auto 8px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #145261;
+        max-width: 214px;
+    }
+    &-link{
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+        font-weight: 700;
+    }
+    &-forget{
+        display: block;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: center;
+    }
+}
+.recovery{
+    &-content{
+        margin-bottom: 56px;
+    }
+    &-header{
+        padding-left:30px ;
+        
+    }
+    &-modal{
+        width: 430px;
+        @media (max-width: 576px) {
+            width: auto !important;
+            max-width: 320px;
+            padding: 0  10px;
+        }
+    }
+    &__title{
+        font-size: 68px;
+        line-height: 40px;
+        text-align: center;
+    }
+    &-form{
+        &__element{
+            width: 300px !important;
+            margin-bottom: 20px;
+            @media (max-width: 576px) {
+                width: auto !important;
+                max-width: 300px;
+            }
+        }
+        &__btn{
+            color: $white;
+            padding: 19px 34px;
+            @media (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
+    &-text{
+        max-width: 297px;
+    }
+}
+.check{
+    text-align: center;
+    &__title{
+        font-size: 24px;
+        line-height: 29px;
+        color: $white;
+        font-weight: 700;
+        max-width: 287px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-content{
+        padding:  0 40px 40px 40px;
+    }
+    &__btn{
+        color: $white;
+        padding: 19px 63px !important;
+    }
+}

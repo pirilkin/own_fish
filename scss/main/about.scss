@@ -1,0 +1,205 @@
+.about {
+    background: $blue;
+    position: relative;
+    padding: 0 0 100px;
+    
+    @media (max-width: 1199px) {
+        padding-bottom: 60px;
+    }
+    @media (max-width: 768px) {
+        padding-bottom: 0;
+        border-radius: 0;
+        // overflow: hidden;
+    }
+.row-craft{
+    @media (max-width: 768px) {
+        // padding-bottom: 0;
+        // overflow: hidden;
+        overflow: hidden;
+    }
+}
+    &-title {
+        margin-bottom: 28px;
+
+        @media (max-width: 1199px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &-subtitle {
+        margin-bottom: 10px;
+
+        @media (max-width: 768px) {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &-container {
+        // margin-bottom: 44px;
+        transform: translateY(-80px);
+    }
+
+    &-img {
+        text-align: center;
+        position: relative;
+        filter: drop-shadow(0px 4px 74px rgba(125, 223, 247, 0.6));
+        height: 290px;
+        margin-bottom: 25px;
+
+        @media (max-width: 1199px) {
+            height: 250px;
+        }
+
+        @media (max-width: 768px) {
+            height: auto;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 10px;
+        }
+
+        &__last-child {
+            transform: translateX(20px);
+        }
+
+        img {
+            @media (max-width: 1199px) {
+                width: 100%;
+            }
+        }
+
+        &__book {
+            img {
+                @media (max-width: 1199px) {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    &-block {
+        position: relative;
+        max-width: 314px;
+        margin: 0 auto;
+
+        @media (max-width: 768px) {
+            width: 80%;
+            margin-bottom: 50px;
+        }
+    }
+
+    &-item {
+        // min-height: 290px;
+    }
+
+    &-number {
+        width: 100%;
+        height: 100%;
+
+        &:before {
+            content: '1';
+            background: url(../img/about_round.svg);
+
+            width: 55px;
+            height: 55px;
+            // display: block;
+            background-size: cover;
+            position: absolute;
+            top: 45px;
+            left: -10px;
+            // z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            line-height: 38px;
+            color: $white;
+            font-weight: 900;
+        }
+
+        &_2 {
+            &:before {
+                content: '2';
+            }
+        }
+
+        &_3 {
+            &:before {
+                content: '3';
+            }
+        }
+    }
+
+    &-text {
+        font-size: 20px;
+        line-height: 24px;
+        color: $black;
+        max-width: 265px;
+        display: block;
+
+        // @media (max-width: 768px) {
+        //     font-size: 15px;
+        //     line-height: 17px;
+        // }
+        @media (max-width: 768px) {
+            max-width: 100%;
+            font-size: 15px;
+            line-height: 18px;
+        }
+
+        &__phone {
+            max-width: 100%;
+
+        }
+
+        &__link {
+            font-weight: 700;
+            display: block;
+        }
+    }
+
+    &-bottom {
+        padding-left: 25px;
+
+        @media (max-width: 768px) {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+
+    &-rules {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 49px;
+
+        @media (max-width: 768px) {
+            margin-top: 0;
+            text-align: center;
+            // display: none;
+        }
+
+        &__text {
+            font-family: 'Inter';
+            color: $rules;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 900;
+        }
+
+        &__splash {
+            margin: 0 15px;
+        }
+    }
+}

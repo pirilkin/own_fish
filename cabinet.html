@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="libs/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Личый кабинет</title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PC2TZW6');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="cabinet">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC2TZW6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+
+        <!-- <img class="header-main-img" src="img/header-gradient.png" alt=""> -->
+        <img class="header-main-img" src="img/header-bg.png" alt="">
+
+        <nav class="header-nav container container-craft">
+            <div class="row header-nav__content">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3 header-lg__logo justify-content-center">
+                    <a href="index.html" class="header-logo header-logo-lg">
+                        <img class="header-logo__img" src="img/header-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu popup-menu d-flex">
+                    <!-- <div class="close-block"> -->
+                    <img class="header-close" src="img/x.svg" alt="">
+                    <!-- </div> -->
+                    <ul
+                        class="col-xl-5 col-lg-5 header-item align-items-center d-flex header-nav-list d-flex justify-content-between ">
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-link" href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-link" href="index.html#about">
+                                Об акции
+                            </a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-link" href="index.html#stock">
+                                Продукция
+                            </a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-link" href="index.html#winners">
+                                Победители
+                            </a>
+                        </li>
+                    </ul>
+                    <div
+                        class="col-xl-2 col-lg-2 header-item header-item-logo header-item-logo__popup d-flex justify-content-center">
+                        <a href="index.html" class="header-logo  header-logo__modal">
+                            <img class="header-logo__img" src="img/header-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 header-item align-items-center d-flex justify-content-between">
+                        <a class="header-nav-link" href="index.html#questions">
+                            Вопросы и ответы
+                        </a>
+                        <a class="header-nav-link header-logout" href="">
+                            Привет, Александр
+                            <button class="btn btn-primary btn-lg active btn-orange btn-def header-logout__btn"
+                                data-toggle="modal" data-target="#registration" data-modal="#custom-modal" role="button"
+                                aria-pressed="true">
+                                <img class="header-logout__icon" src="./img/logout.svg" alt="">
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div id="burger" class="burger">
+                    <!-- <span></span> -->
+                </div>
+            </div>
+            <!-- </div> -->
+        </nav>
+        <div class="container cabinet-container__title">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8">
+                    <h1 class="cabinet-header__title reg-shadow">
+                        Личный кабинет
+                    </h1>
+                </div>
+                <div class="col-xl-4 col-lg-4 d-flex align-items-center">
+                    <div class="cabinet-amound">
+                        <div class="cabinet-amound__block">
+                            <span class="cabinet-amound__text">Количество заявок
+                                на розыгрыш <br>
+                                Главного приза:
+                            </span>
+                        </div>
+                        <span class="cabinet-amound__number">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <nav class="cabinet-nav">
+                        <div class="nav nav-tabs cabinet-nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link cabinet-nav-link active" id="nav-home-tab" data-toggle="tab"
+                                href="#nav-home" role="tab" aria-controls="nav-home"
+                                aria-selected="true">ЗАРЕГИСТРИРОВАТЬ КОД</a>
+                            <a class="nav-item nav-link cabinet-nav-link" id="nav-profile-tab" data-toggle="tab"
+                                href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">МОИ
+                                ЗАЯВКИ</a>
+                            <a class="nav-item nav-link cabinet-nav-link" id="nav-contact-tab" data-toggle="tab"
+                                href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">МОИ
+                                ПРИЗЫ</a>
+                            <a class="nav-item nav-link cabinet-nav-link" id="nav-data-tab" data-toggle="tab"
+                                href="#nav-data" role="tab" aria-controls="nav-data" aria-selected="false">ПЕРСОНАЛЬНЫЕ
+                                ДАННЫЕ</a>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content code" id="nav-tabContent">
+                        <!-- первая вкладка -->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <!-- <div class="container"> -->
+                            <div class="row justify-content-center">
+                                <div class="col-xl-10 code-content">
+                                    <h2 class="code__title">
+                                        Зарегистрировать код
+                                    </h2>
+                                    <h3 class="code__subtitle">
+                                        Коды расположены в пачке с акционной продукцией
+                                    </h3>
+                                    <div class="code__number">
+                                        <form action="" class="d-flex code-form">
+
+                                            <input type="text"
+                                                class="form-input form-control questions-form__input_item code-input"
+                                                placeholder="XXX XXX XXX XXX">
+                                            <input type="submit"
+                                                class="btn btn-primary btn-lg active code-submit btn-orange"
+                                                role="button" aria-pressed="true" value="Зарегистрировать код">
+
+                                        </form>
+                                    </div>
+                                    <div class="table-wrap table__winner table-code">
+                                        <h4 class="code-bottom__title">
+                                            Зарегистрированные коды
+                                        </h4>
+                                        <table id="code__data__table" class="display winners-table code-tables mb-4"
+                                            cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr class="code-table__title">
+                                                    <th class="code-date">Дата и время</th>
+                                                    <th>Код</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="code-tr">
+                                                    <td class="code-date">Дата регистрации</td>
+                                                    <td>2349 12355 3345 0011</td>
+                                                </tr>
+                                                <tr class="code-tr">
+                                                    <td class="code-date">Дата регистрации</td>
+                                                    <td>2349 12355 3345 0011</td>
+                                                </tr>
+                                                <tr class="code-tr">
+                                                    <td class="code-date">Дата регистрации</td>
+                                                    <td>2349 12355 3345 0011</td>
+                                                </tr>
+                                                <tr class="code-tr">
+                                                    <td class="code-date">Дата регистрации</td>
+                                                    <td>2349 12355 3345 0011</td>
+                                                </tr>
+                                                <tr class="code-tr">
+                                                    <td class="code-date">Дата регистрации</td>
+                                                    <td>2349 12355 3345 0011</td>
+                                                </tr>
+                                                <tr class="code-tr">
+                                                    <td class="code-date">Дата регистрации</td>
+                                                    <td>2349 12355 3345 0011</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+
+                        </div>
+                        <!-- вторая вкладка -->
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-10 code-content">
+                                    <h2 class="code__title">
+                                        Мои заявки
+                                    </h2>
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6  col-md-12 d-flex request-card">
+                                            <div class="request-block">
+                                                <div class="request-block__img request-block__img_sp">
+                                                    <img src="img/request_1.png" alt="">
+                                                </div>
+                                                <div class="request-block__content">
+                                                    <div class="request-winner">
+                                                        Выиграла
+                                                    </div>
+                                                    <p class="request-block__data">12 июня</p>
+                                                    <p class="request-block__week">ежедневный</p>
+                                                    <div class="request-block__count">
+                                                        <div class="request-block__number">1</div>
+                                                        <div class="request-block__text">Заявка</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6  col-md-12 d-flex request-card">
+                                            <div class="request-block">
+                                                <div class="request-block__img">
+                                                    <img src="img/request_2.png" alt="">
+                                                </div>
+                                                <div class="request-block__content">
+                                                    <!-- <div class="request-winner">
+                                                        Выиграла
+                                                    </div> -->
+                                                    <p class="request-block__data">12 июня</p>
+                                                    <p class="request-block__week">Еженедельный</p>
+                                                    <div class="request-block__count">
+                                                        <div class="request-block__number request-block__number_zero">0
+                                                        </div>
+                                                        <div class="request-block__text">Заявок</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6  col-md-12 d-flex request-card">
+                                            <div class="request-block">
+                                                <div class="request-block__img">
+                                                    <img src="img/request_3.png" alt="">
+                                                </div>
+                                                <div class="request-block__content">
+                                                    <!-- <div class="request-winner">
+                                                        Выиграла
+                                                    </div> -->
+                                                    <p class="request-block__data">12 июня</p>
+                                                    <p class="request-block__week"> Ежемесячный</p>
+                                                    <div class="request-block__count">
+                                                        <div class="request-block__number request-block__number_zero">0
+                                                        </div>
+                                                        <div class="request-block__text">Заявок</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6  col-md-12 d-flex request-card">
+                                            <div class="request-block">
+                                                <div class="request-block__img">
+                                                    <img src="img/request_4.png" alt="">
+                                                </div>
+                                                <div class="request-block__content">
+                                                    <!-- <div class="request-winner">
+                                                        Выиграла
+                                                    </div> -->
+                                                    <p class="request-block__data">12 июня</p>
+                                                    <p class="request-block__week">Главный приз</p>
+                                                    <div class="request-block__count">
+                                                        <div class="request-block__number request-block__number_zero">0
+                                                        </div>
+                                                        <div class="request-block__text">Заявок</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table id="request__data__table"
+                                        class="display winners-table code-tables request-table mb-4" cellspacing="0"
+                                        width="100%">
+                                        <thead>
+                                            <tr class="code-table__title">
+                                                <th class="code-date">Дата формирования заявки</th>
+                                                <th>Категория розыгрыша</th>
+                                                <th>Статус</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="code-tr">
+                                                <td class="code-date">12.06.2021, 19:59</td>
+                                                <td>12.06.2021, 19:59</td>
+                                                <td>
+                                                    <span class="request-status request-status__win">
+                                                        Выиграл
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="code-tr">
+                                                <td class="code-date">12.06.2021, 19:59</td>
+                                                <td>12.06.2021, 19:59</td>
+                                                <td>
+                                                    <span class="request-status request-status__fall">
+                                                        Проиграл
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="code-tr">
+                                                <td class="code-date">12.06.2021, 19:59</td>
+                                                <td>12.06.2021, 19:59</td>
+                                                <td>
+                                                    <span class="request-status request-status__fall">
+                                                        Проиграл
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="code-tr">
+                                                <td class="code-date">12.06.2021, 19:59</td>
+                                                <td>12.06.2021, 19:59</td>
+                                                <td>
+                                                    <span class="request-status request-status__fall">
+                                                        Проиграл
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- третья -->
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-10 code-content">
+                                    <h2 class="code__title cup__title">
+                                        Призы
+                                    </h2>
+                                    <!-- если нет призов -->
+                                    <div class="cup-text">
+                                        К сожалению, пока выигранных призов нет.
+                                        Регистрируйте коды, получайте новые заявки на участие
+                                        в розыгрыше
+                                    </div>
+                                    <div class="code__number">
+                                        <a href="#nav-home" class="btn btn-primary btn-lg active code-btn btn-orange"
+                                            role="tab" aria-pressed="true" aria-controls="nav-home">
+                                            Зарегистрировать код</a>
+                                    </div>
+
+                                    <!-- с призами -->
+
+                                    <!-- <div class="cup-phone ">
+                                        <div class="cup-phone__img">
+                                            <img src="img/prizes_phone.png" alt="">
+                                        </div>
+                                        <div class="cup-phone__text">
+                                            <span class="cup-phone__price">Вы выиграли денежный приз 200 рублей</span>
+                                            <span class="cup-phone__number">приз отправлен на номер <span
+                                                    class="cup-phone__number_item">+7 985 223 44 55</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="cup-block ">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 cup-block__img">
+                                            <img src="img/prizes_1.png" alt="">
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 cup-block__content">
+                                            <h4 class="cup-block__title title">Поздравляем!</h4>
+                                            <p class="cup-block__text">Вы выиграли беспроводные наушники
+                                                Заполните адрес доставки:</p>
+                                            <a href="#" class="btn btn-primary active cup-block__btn btn-orange"
+                                                role="button" aria-pressed="true">
+                                                Адрес доставки</a>
+                                        </div>
+                                    </div>
+                                    <div class="cup-block ">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 cup-block__img">
+                                            <img src="img/prizes_2.png" alt="">
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 cup-block__content">
+                                            <h4 class="cup-block__title title">Поздравляем!</h4>
+                                            <p class="cup-block__text">Вы выиграли беспроводные наушники
+                                                Заполните адрес доставки:</p>
+                                            <a href="#" class="btn btn-primary active cup-block__btn btn-orange"
+                                                role="button" aria-pressed="true">
+                                                Адрес доставки</a>
+                                        </div>
+                                    </div>
+                                    <div class="cup-block ">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 cup-block__img">
+                                            <img src="img/prizes_3.png" alt="">
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 cup-block__content">
+                                            <h4 class="cup-block__title title">Поздравляем!</h4>
+                                            <p class="cup-block__text">Вы стали победителем главного приза
+                                                NIVA TRAVEL</p>
+                                            <a href="#" class="btn btn-primary active cup-block__btn btn-orange"
+                                                role="button" aria-pressed="true">
+                                                Персональные данные</a>
+                                            <p class="cup-block__but">Для получения приза Вам необходимо заполнить
+                                                персональные данные.</p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- четвертая -->
+                        <div class="tab-pane fade" id="nav-data" role="tabpanel" aria-labelledby="nav-data-tab">
+                            <div class="row justify-content-center data-block">
+                                <div class="col-xl-8 col-lg-11code-content">
+                                    <h2 class="code__title cup__title">
+                                        Персональные данные
+                                    </h2>
+                                    <div class="data-alert">
+                                        <div class="data-alert__img">
+                                            <img src="img/alert.svg" alt="">
+                                        </div>
+                                        <div class="data-alert__text">
+                                            <p class="data-alert__text_item">Для получения приза Вам необходимо
+                                                заполнить персональные данные. Эти данные, в соответствии с законом,
+                                                требуются для уплаты налогов при получении призов, общая стоимость
+                                                которых превышает 4000 рублей. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-11">
+                                    <div class="data-info">
+                                        <div class="data-info__fill data-info__item">
+                                            <span class="data-info__text">Заполнить персональные данные</span>
+                                        </div>
+                                        <div class="data-info__check data-info__item">
+                                            <img class="data-info__check__img" src="img/data-check.svg" alt="">
+                                            <span class="data-info__text">Ваши данные находятся на проверке</span>
+                                        </div>
+                                        <div class="data-info__confirm data-info__item">
+                                            <img class="data-info__confirm__img" src="img/data-confirm.svg" alt="">
+                                            <span class="data-info__text">Персональные данные подтверждены</span>
+                                        </div>
+                                        <div class="data-info__refuse data-info__item">
+                                            <div class="data-info__block">
+                                                <img src="img/data-refused.svg" alt="">
+                                                <span class="data-info__text">Персональные данные подтверждены</span>
+                                            </div>
+                                            <span class="data-info__refuse_check">Проверьте данные и отправьте заново
+                                                или обратитесь
+                                                в <a href="" class="data-info__support">клиентскую поддержку</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="row"> -->
+                                <form class="form-custom col-xl-6 col-lg-11 d-flex data-form__one" action="">
+                                    <!-- <div class="container"> -->
+                                    <h2 class="code__title data__subtitle">Регистрационные данные</h2>
+                                    <div class="col-xl-6 col-lg-12 col-md-12 reg-block data-block__reg">
+                                        <div class="form-custom__element reg-form__element data-form__element">
+                                            <input placeholder="Фамилия" type="text"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element data-form__element">
+                                            <input placeholder="Имя" type="text"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element data-form__element">
+                                            <input placeholder="Отчество" type="text"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element data-form__element">
+                                            <input placeholder="Дата рождения" type="text" id="datepicker-cabinet"
+                                                class="form-custom__input form-control reg-form__input  datepicker-cabinet">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-12 col-md-12 d-flex reg-block data-block__reg">
+                                        <div class="reg-radio reg-form__element data-form__element">
+                                            <h5 class="reg-form__title">Пол:</h5>
+                                            <div class="form-check reg-check">
+                                                <input class="form-check-input reg-form-check" type="radio"
+                                                    name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label reg-check-label" for="flexRadioDefault1">
+                                                    Муж.
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input reg-form-check" type="radio"
+                                                    name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                <label class="form-check-label reg-check-label" for="flexRadioDefault2">
+                                                    Жен
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-custom__element reg-form__element data-form__element">
+                                            <input placeholder="Город" type="text"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element data-form__element">
+                                            <input placeholder="Email" type="email"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element data-form__element">
+                                            <input placeholder="Номер телефона" type="tel"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                    </div>
+                                    <button class="btn-def btn-green form-custom__btn btn-orange reg-form__btn"
+                                        data-dismiss="alert" aria-label="Close">
+                                        Сохранить
+                                    </button>
+
+                                </form>
+                                <form class="form-custom col-xl-6 col-lg-11 d-flex data-form__two" action="">
+                                    <!-- <div class="container"> -->
+                                    <h2 class="code__title data__subtitle">Адрес доставки:</h2>
+
+                                    <div
+                                        class="form-custom__element reg-form__element data-form__element data-form__element_address">
+                                        <input placeholder="Город" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__top">
+                                        <input placeholder="Улица" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__top">
+                                    </div>
+                                    <div
+                                        class="form-custom__element reg-form__element data-form__element data-form__element_address">
+                                        <input placeholder="№ дома" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                        <input placeholder="№ корпуса" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                        <input placeholder="№ квартиры" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                    </div>
+                                    <!-- </div> -->
+                                    <button class="btn-def btn-green form-custom__btn btn-orange reg-form__btn"
+                                        data-dismiss="alert" aria-label="Close">
+                                        Сохранить
+                                    </button>
+
+                                </form>
+                                <form class="form-custom col-xl-6 col-lg-11 d-flex data-form__three" action="">
+                                    <!-- <div class="container"> -->
+                                    <h2 class="code__title data__subtitle">Данные для уплаты налогов:</h2>
+                                    <h4 class="request-block__week data-form__letter ">
+                                        Первая страница паспорта
+                                    </h4>
+                                    <!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 col-md-12 d-flex reg-block data-block__reg"> -->
+
+                                    <div
+                                        class="form-custom__element reg-form__element data-form__element data-form__element_address">
+                                        <input placeholder="Серия" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                        <input placeholder="Номер" type="текст"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                        <input placeholder="Дата выдачи" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                    </div>
+                                    <div
+                                        class="form-custom__element reg-form__element data-form__element data-form__element_address">
+                                        <input placeholder="Код подразделения" type="text"
+                                            class="form-custom__input form-control reg-form__input data-passport__bottom">
+                                    </div>
+                                    <!-- </div> -->
+                                    <h4 class="request-block__week data-form__letter ">
+                                        Адрес прописки
+                                    </h4>
+
+
+                                    <div
+                                        class="form-custom__element reg-form__element data-form__element data-form__element_address">
+                                        <input placeholder="Город" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__top">
+                                        <input placeholder="Улица" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__top">
+                                    </div>
+                                    <div
+                                        class="form-custom__element reg-form__element data-form__element data-form__element_address">
+                                        <input placeholder="№ дома" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                        <input placeholder="№ корпуса" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                        <input placeholder="№ квартиры" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__bottom">
+                                    </div>
+
+                                    <div
+                                        class="form-custom__element reg-form__element data-form__element data-form__element_download">
+                                        <div class="data-download form-control">
+                                            <div class="data-download__file__container">
+                                                <input id="download-file" placeholder="Город проживания" type="file"
+                                                    class="form-custom__input form-control reg-form__input data-download__file">
+                                                <label for="download-file">Фото паспорта лицевая сторона</label>
+                                            </div>
+                                            <div class="upload-content">
+                                                <img src="img/upload.svg" alt="">
+                                                <span>Загрузить файл</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="data-download data-download__view form-control">
+                                            <div class="data-download__file__container">
+                                                <input id="download-photo" placeholder="Город проживания" type="file"
+                                                    class="form-custom__input form-control reg-form__input  data-download__photo">
+                                                <label for="download-photo">Фото паспорта, прописка</label>
+                                            </div>
+                                            <div class="upload-content">
+                                                <span>Фото паспорта</span>
+                                                <img src="img/del.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="form-custom__element reg-form__element data-form__element data-form__element_address">
+                                        <input placeholder="ИНН" type="text"
+                                            class="form-custom__input form-control reg-form__input data-address__top">
+                                        <div class="data-download form-control">
+                                            <div class="data-download__file__container">
+                                                <input id="download-file__tax" placeholder="Город проживания"
+                                                    type="file"
+                                                    class="form-custom__input form-control reg-form__input data-download__file">
+                                            </div>
+                                            <div class="upload-content">
+                                                <img src="img/upload.svg" alt="">
+                                                <span>Загрузить файл</span>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <button class="btn-def btn-green form-custom__btn btn-orange reg-form__btn"
+                                        data-dismiss="alert" aria-label="Close">
+                                        Сохранить
+                                    </button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+                        <div class="footer-top__social col-md-12">
+
+                        </div>
+                        <div
+                            class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center footer-block">
+                            <div class="footer-text">
+                                Номер бота WhatsApp:
+                            </div>
+                            <a href="https:/wa.me/+79031578954" class="footer-number">
+                                +7 (903) 157 89 54
+                            </a>
+                            <div class="footer-line"></div>
+                        </div>
+                        <div
+                            class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center footer-block">
+                            <div class="footer-text">
+                                Call-центр
+                            </div>
+                            <!-- <div class="footer-number"> -->
+                            <a class="footer-number" href="tel:8-800 333 85 80">
+                                8-800 333 85 80
+                            </a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 footer-block__text">
+                    <a href="mailto:help@промо.своярыбка.рф" class="footer-title">
+                        help@промо.своярыбка.рф
+                    </a>
+                    <div class="footer-text  footer-text__bottom">
+                        Общий срок проведения акции с 15 июня по 15 сентября 2021 года. Срок регистрации кодов с 15 июня
+                        по 15 августа 2021 года. Полные правила проведения акции, информацию об Организаторе акции, о
+                        количестве призов, сроках, месте и порядке их получения можно узнать на сайте
+                        промо.своярыбка.рф. Количество призов ограничено, их внешний вид может отличаться от
+                        изображённого на рекламных материалах. Организатор акции — АО «Оригинал».
+                    </div>
+                    <div class="row footer-bottom__row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 footer-bottom footer-bottom__policy">
+                            <a class="footer-text footer-bottom__text" href="">Политика конфиденциальности</a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 footer-bottom footer-bottom__social">
+                            <div class="footer-social">
+                                <ul class="footer-list d-flex justify-content-center">
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__social">
+                                            <img src="img/inst.svg" alt="" class="footer-list__img">
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__social">
+                                            <img src="img/vk.svg" alt="" class="footer-list__img">
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__social">
+                                            <img src="img/fb.svg" alt="" class="footer-list__img">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 footer-bottom footer-bottom__personal">
+                            <a class="footer-text footer-bottom__text" href="">Обработка персональных данных</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="/libs/js/jquery.min.js">
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="libs/js/bootbox.min.js"></script>
+    <script src="libs/js/bootbox.locales.min.js"></script>
+    <script src="libs/js/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

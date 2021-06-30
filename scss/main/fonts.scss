@@ -1,0 +1,13 @@
+.header-nav-link{
+    @media (max-width: 1199px){
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+.winners-top__date,
+.winners-top__bold,
+.header-nav-link,
+.about-subtitle,
+.questions-form__btn{
+    text-transform: uppercase;
+}

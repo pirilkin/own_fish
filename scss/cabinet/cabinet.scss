@@ -1,0 +1,156 @@
+.cabinet {
+    &-header {
+        &__title {
+            font-family: "Coral";
+            font-size: 142px;
+            line-height: 78px;
+            margin-bottom: 50px;
+            position: relative;
+            margin-top: 0px;
+
+            @media(max-width: 1399px) {
+                // font-size: 142px;
+                line-height: 53px;
+                // margin-bottom: 50px;
+                // margin-top: 43px;
+            }
+            @media(max-width: 1199px) {
+                font-size: 115px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 5px;
+                right: 15px;
+                background: url(../img/cabinet-title-splash.svg) no-repeat;
+                background-size: contain;
+                width: 28px;
+                height: 34px;
+                @media(max-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    &-container{
+        &__title{
+            margin-top: 50px;
+            @media(max-width: 991px) {
+                margin-bottom: 25px;
+                text-align: center;
+            }
+        }
+    }
+    &-amound {
+        background: $blue;
+        height: 90px;
+        width: 348px;
+        position: relative;
+        border-radius: 20px;
+        padding: 15px 27px 15px 102px;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: 991px) {
+            margin: 0 auto;
+            padding-left: 90px;
+        }
+        &::after {
+            content: '';
+            background: url('../img/mini_car.png') no-repeat right bottom;
+            width: 109px;
+            height: 70px;
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            transform: translate(-50%, -50%);
+        }
+
+        &__block {
+            height: 100%;
+            max-width: 146px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+            color: $white;
+            // margin-left: 102px;
+            @media(max-width: 1199px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        &__number {
+            font-family: 'Coral';
+            color: $white;
+            font-size: 130px;
+            line-height: 0px;
+        }
+    }
+
+    &-nav {
+        &-tabs {
+            align-items: flex-end;
+        }
+
+        &-link {
+            border: none !important;
+            background: rgba($body, 1);
+            // background: rgba(#3E2D0A, 0.2);
+            // width: 24.6%;
+            margin-bottom: -2px !important;
+            flex: 1;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+            border-radius: 5px 5px 0 0;
+            height: 80px;
+            margin: 0 1.5px;
+            font-weight: 700;
+            @media (max-width: 1199px) {
+                text-align: center;
+            }
+            @media (max-width: 991px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
+            @media (max-width: 768px) {
+                height: 30px;
+                flex: none;
+                width: 100%;
+                margin: 0;
+                margin-bottom: 2px !important;
+                border-radius: 0;
+            }
+
+            &.active {
+                background: $white;
+                height: 90px;
+                opacity: 1;
+                @media (max-width: 768px) {
+                    height: 40px;
+                }
+            }
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+        }
+    }
+
+    .footer-container {
+        padding: 45px 0 100px;
+        transform: translateY(0);
+    }
+}

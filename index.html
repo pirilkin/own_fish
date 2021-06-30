@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="libs/css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PC2TZW6');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC2TZW6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <img class="header-main-img" src="img/header-bg.png" alt="">
+        <nav class="header-nav container container-craft">
+            <div class="row header-nav__content">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-3 header-lg__logo justify-content-center">
+                    <a href="index.html" class="header-logo header-logo-lg">
+                        <img class="header-logo__img" src="img/header-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu popup-menu d-flex">
+                    <!-- <div class="close-block"> -->
+                    <img class="header-close" src="img/x.svg" alt="">
+                    <!-- </div> -->
+                    <ul
+                        class="col-xl-5 col-lg-5 header-item align-items-center d-flex header-nav-list d-flex justify-content-between ">
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-link" href="index.html">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-link" href="#about">
+                                Об акции
+                            </a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-link" href="#stock">
+                                Продукция
+                            </a>
+                        </li>
+                        <li class="header-nav-list__item">
+                            <a class="header-nav-link" href="#winners">
+                                Победители
+                            </a>
+                        </li>
+                    </ul>
+                    <div
+                        class="col-xl-2 col-lg-2 header-item header-item-logo header-item-logo__popup d-flex justify-content-center">
+                        <a href="index.html" class="header-logo  header-logo__modal">
+                            <img class="header-logo__img" src="img/header-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 header-item align-items-center d-flex justify-content-between">
+                        <a class="header-nav-link" href="#questions">
+                            Вопросы и ответы
+                        </a>
+                        <button class="btn btn-primary btn-lg active btn-blue btn-def header-login__btn"
+                            data-toggle="modal" data-target="#enter" data-modal="#custom-modal" role="button"
+                            aria-pressed="true">
+                            <img class="header-login__icon" src="./img/add.svg" alt="">
+                            <span class="header-login__text">Личный кабинет</span>
+                            <!-- личный кабинет -->
+                        </button>
+                    </div>
+                </div>
+                <div id="burger" class="burger">
+                    <!-- <span></span> -->
+                </div>
+            </div>
+            <!-- </div> -->
+        </nav>
+        <div class="container-craft header-container">
+            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-8 header-stack">
+                <h1 class="main-title title-shadow">
+                    <span class="main-title__item main-title__blue"> По своем<span class="main-title__y">у</span>
+                        хотению,</span>
+                    <span class="main-title__item main-title__brown br">по рыбкиному велению</span>
+                </h1>
+                <h3 class="text header-text">
+                    Регистрируй коды и забирай призы
+                    с 15 июня по 15 августа 2021 года!
+                </h3>
+                <a href="#" class="btn btn-primary btn-lg active header-btn keyframe-btn btn-orange" data-toggle="modal"
+                    data-target="#registration" data-modal="#custom-modal" role="button" aria-pressed="true">
+                    участвовать в акции</a>
+                <!-- <div class="header-car__addition">
+                    <img src="img/car.png" alt="">
+                </div> -->
+            </div>
+        </div>
+        <section id="about" class="about">
+            <div class="container container-craft about-container">
+                <h2 class="title about-title">
+                    Об акции
+                </h2>
+                <div class="row craft-row">
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 ">
+                        <div class="about-block">
+                            <div class="about-item">
+                                <div class="about-number">
+                                </div>
+                                <div class="about-img about-img__book">
+                                    <img src="img/about_1_02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="about-bottom">
+                                <h4 class="subtitle about-subtitle">
+                                    Приобретай
+                                </h4>
+                                <span class="about-text">
+                                    акционную продукцию
+                                    «Своя рыбка» в упаковке
+                                    с акционным стикером в магазинах своего города
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 ">
+                        <div class="about-block">
+                            <div class="about-item">
+                                <div class="about-number about-number_2">
+                                </div>
+                                <div class="about-img about-img__phone">
+                                    <img src="img/about_2_02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="about-bottom">
+                                <h4 class="subtitle about-subtitle">
+                                    Находи
+                                </h4>
+                                <span class="about-text about-text__phone">
+                                    коды под стикерами и регистрируй их в личном кабинете на сайте акции или через
+                                    чат-бот
+                                    WhatsApp:
+                                    <!-- исправить -->
+                                    <a class="about-text__link" href="https:/wa.me/+79031578954">+7 (903) 157 89 54</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 ">
+                        <div class="about-block">
+                            <div class="about-item">
+                                <div class="about-number  about-number_3">
+                                    <!-- <img src="./img/about-round" alt=""> -->
+                                    <!-- <span class="about-number__item"></span> -->
+                                </div>
+                                <div class="about-img about-img__last-child">
+                                    <img src="img/about_3_03.png" alt="">
+                                </div>
+                            </div>
+                            <div class="about-bottom">
+                                <h4 class="subtitle about-subtitle">
+                                    Участвуй
+                                </h4>
+                                <span class="about-text about-text__phone">
+                                    в розыгрышах ценных призов! <br>
+                                    Главный приз: <br>
+                                    <b>АВТОМОБИЛЬ NIVA TRAVEL</b>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="" class="about-rules">
+                    <img class="about-rules__splash about-rules__splash_left" src="./img/all-rules_left.svg" alt="">
+                    <span class="about-rules__text">
+                        полные правила акции
+                    </span>
+                    <img class="about-rules__splash about-rules__splash_right" src="./img/all-rules_right.svg" alt="">
+                </a>
+            </div>
+
+        </section>
+    </header>
+    <section id="stock" class="stock">
+        <h2 class="title stock-title">
+            Покупай эти товары
+            <span class="stock-br br">с акционным стикером!</span>
+        </h2>
+        <div class="container stock-content">
+            <div class="about-slider about-slider__bottom about-swiper_slider swiper-container">
+                <div class="about-slider__wrapper swiper-wrapper">
+                    <div class=" swiper-slide">
+                        <div class="stock-img">
+                            <img src="./img/about_3_03.png" class="stock-img__item" alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="stock-img">
+                            <img src="./img/slider/Property-2.png" class="stock-img__item" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="stock-img">
+                            <img src="./img/slider/Property-3.png" class="stock-img__item" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="stock-img">
+                            <img src="./img/slider/Property-4.png" class="stock-img__item" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-btn swiper-btn-prev stock-arrows stock-arrows__prev">
+                    <img class="swiper-arrow__prev" src="img/arrow_left.svg" alt="">
+                </div>
+                <div class="swiper-btn swiper-btn-next  stock-arrows stock-arrows__next">
+                    <img class="swiper-arrow__next" src="img/arrow_right.svg" alt="">
+                </div> -->
+
+                <!-- </div> -->
+            </div>
+            <div class="text-slider swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="stock-text__slide swiper-slide">
+                        <p class="stock-text__item">
+                            Форель «Своя рыбка» слабосолёная, филе-кусок
+                        </p>
+                        <p class="stock-text__gray">(200 гр.)</p>
+                    </div>
+                    <div class="stock-text__slide swiper-slide">
+                        <p class="stock-text__item">
+                            Сельдь «Своя рыбка» слабосолёная, филе
+                        </p>
+                        <p class="stock-text__gray">(400 гр.)</p>
+                    </div>
+                    <div class="stock-text__slide swiper-slide">
+                        <p class="stock-text__item">
+                            Скумбрия горячего копчения «Своя рыбка» с пряностями, филе
+                        </p>
+                        <p class="stock-text__gray">(210 гр.)</p>
+                    </div>
+                    <div class="stock-text__slide swiper-slide">
+                        <p class="stock-text__item">
+                            Скумбрия горячего копчения «Своя рыбка» с пряностями, филе
+                        </p>
+                        <p class="stock-text__gray">(210 гр.)</p>
+                    </div>
+                </div>
+                <div class="swiper-btn swiper-btn-prev stock-arrows stock-arrows__prev">
+                    <img class="swiper-arrow__prev" src="img/arrow_left.svg" alt="">
+                </div>
+                <div class="swiper-btn swiper-btn-next  stock-arrows stock-arrows__next">
+                    <img class="swiper-arrow__next" src="img/arrow_right.svg" alt="">
+                </div>
+            </div>
+            <!-- <div class="stock-btn">
+                <a href="#" class="btn btn-primary btn-lg active header-btn stock-btn__item" role="button"
+                    aria-pressed="true">
+                    Вся продукция</a>
+            </div> -->
+        </div>
+    </section>
+    <section id="winners" class="winners">
+        <h2 class="title winners-title">
+            Победители
+        </h2>
+        <div class="container">
+            <div class="row d-flex justify-content-center winners-content">
+                <div class="winners-cup__block">
+                    <img src="./img/winners-cup.svg" alt="" class="winners-cup">
+                </div>
+                <div class="winners-top">
+                    <h4 class="winners-top__bold">Победитель суперприза</h4>
+                    <p class="winners-top__text">Определение победителя:</p>
+                    <h3 class="winners-top__date">07 августа</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-12 winners-table__container">
+                    <form action="" class="search__for__number">
+                        <div class="search__inner">
+                            <div class="input-container search__input">
+                                <input type="text" class="form-control input search__input_item"
+                                    placeholder="Поиск по номеру" id="search__number" required>
+                                <div class="cut"></div>
+                            </div>
+                            <span class="btn__search">
+                                <button><img src="img/glass.svg" alt="search__icon"></button>
+                            </span>
+                        </div>
+                    </form>
+                    <div class="table-wrap table__winner">
+                        <table id="data__table" class="display winners-table mb-4" cellspacing="0" width="100%">
+                            <thead>
+                                <tr class="winners-table__title">
+                                    <th class="th">Дата розыгрыша</th>
+                                    <th class="th">ФИО</th>
+                                    <th class="th">Номер телефона</th>
+                                    <th class="th">Приз</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="winners-td">17.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Брендированный рюкзак</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.11.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2031</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">25.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Брендированный рюкзак</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.03.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">20.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2022</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">17.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Брендированный рюкзак</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.11.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2031</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">25.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Брендированный рюкзак</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.03.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">20.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2022</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">17.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Брендированный рюкзак</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.11.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2031</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">25.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Брендированный рюкзак</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.03.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">20.01.2021</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Денежный приз</td>
+                                </tr>
+                                <tr>
+                                    <td class="winners-td">27.01.2022</td>
+                                    <td class="winners-td">Пакк Какак</td>
+                                    <td class="winners-td">+7 (96') 45'-''-''</td>
+                                    <td class="winners-td">Беспроводные наушники</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- <nav aria-label="Page navigation winners-pagination">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav> -->
+            </div>
+        </div>
+    </section>
+    <section id="questions" class="questions">
+        <h2 class="title questions-title">
+            Вопросы и ответы
+        </h2>
+        <div class="container questions-block__top">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10">
+                    <div id="accordion" class="questions-accordion">
+                        <!-- карта 1 -->
+                        <div class="card questions-card">
+                            <div class="card-header questions-card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link d-flex collapsed align-items-center questions-btn"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <div class="questions-add">
+                                            <div class="questions-add_vert"></div>
+                                            <div class="questions-add_goriz"></div>
+                                        </div>
+                                        <div class="questions-text">
+                                            Кто является Организатором Акции?
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body  questions-card-body">
+                                    Общий срок проведения Акции (включает срок выдачи призов): с 12 апреля 2021 года по
+                                    30 июня 2021 года. Срок регистрации чеков и участников: с 12 апреля 2021 года по 31
+                                    мая 2021 года. Организатор Акции вправе увеличить срок проведения акции.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- карта 2 -->
+                        <div class="card questions-card">
+                            <div class="card-header questions-card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex align-items-center  questions-btn"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <div class="questions-add">
+                                            <div class="questions-add_vert"></div>
+                                            <div class="questions-add_goriz"></div>
+                                        </div>
+                                        <div class="questions-text">
+                                            Какова территория проведения Акции? Где можно купить акционную продукцию
+                                            «Своя рыбка»?
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class="card-body  questions-card-body">
+                                    Общий срок проведения Акции (включает срок выдачи призов): с 12 апреля 2021 года по
+                                    30 июня 2021 года. Срок регистрации чеков и участников: с 12 апреля 2021 года по 31
+                                    мая 2021 года. Организатор Акции вправе увеличить срок проведения акции.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- карта 3 -->
+                        <div class="card questions-card">
+                            <div class="card-header questions-card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex align-items-center  questions-btn"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <div class="questions-add">
+                                            <div class="questions-add_vert"></div>
+                                            <div class="questions-add_goriz"></div>
+                                        </div>
+                                        <div class="questions-text">
+                                            Кто является Организатором Акции?
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="card-body  questions-card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
+                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- карта 4 -->
+                        <div class="card questions-card">
+                            <div class="card-header questions-card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed d-flex align-items-center  questions-btn"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <div class="questions-add">
+                                            <div class="questions-add_vert"></div>
+                                            <div class="questions-add_goriz"></div>
+                                        </div>
+                                        <div class="questions-text">
+                                            Кто является Организатором Акции?
+                                        </div>
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordion">
+                                <div class="card-body  questions-card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terryutcher
+                                    vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                                    accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions-pagination__block d-flex justify-content-center">
+                        <nav aria-label="Page navigation questions-pagination d-flex justify-content-center">
+                            <ul class="pagination">
+
+                                <li class="page-item questions-page-item active">
+                                    <a class="questions-pagination-page-link page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item questions-page-item">
+                                    <a class="questions-pagination-page-link page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item questions-page-item">
+                                    <a class="questions-pagination-page-link page-link" href="#">3</a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </section>
+    <section class="form"> -->
+        <div class="container questions-block__bottom">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10">
+                    <h2 class="title questions-subtitle">
+                        Задать вопрос
+                    </h2>
+                    <form action="">
+                        <div class="form-row">
+                            <!-- <div class="questions-form__top"> -->
+                            <div class="col-xl-4 col-lg-4 col-md-4 questions-form__input">
+                                <input type="text" class="form-input form-control questions-form__input_item"
+                                    placeholder="Имя">
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 questions-form__input">
+                                <input type="tel" class="form-input form-control questions-form__input_item"
+                                    placeholder="Телефон">
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 questions-form__input">
+                                <input type="Email" class="form-input form-control questions-form__input_item"
+                                    placeholder="Email">
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="questions-form__bottom "> -->
+                            <div class="col-xl-12 questions-form__bottom">
+                                <textarea class="form-control questions-form__textarea" id="form-textarea"
+                                    placeholder="Ваш вопрос"></textarea>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                        <div class="questions-form__btn_block">
+                            <button type="submit" class="btn btn-primary questions-form__btn btn-orange">Задать
+                                вопрос</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+                        <div class="footer-top__social col-md-12">
+
+                        </div>
+                        <div
+                            class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center footer-block">
+                            <div class="footer-text">
+                                Номер бота WhatsApp:
+                            </div>
+                            <a href="https:/wa.me/+79031578954" class="footer-number">
+                                +7 (903) 157 89 54
+                            </a>
+                            <div class="footer-line"></div>
+                        </div>
+                        <div
+                            class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 col-md-6 col-sm-6 col-6 d-flex justify-content-center footer-block">
+                            <div class="footer-text">
+                                Call-центр
+                            </div>
+                            <!-- <div class="footer-number"> -->
+                            <a class="footer-number" href="tel:8-800 333 85 80">
+                                8-800 333 85 80
+                            </a>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-10 footer-block__text">
+                    <a href="mailto:help@промо.своярыбка.рф" class="footer-title">
+                        help@промо.своярыбка.рф
+                    </a>
+                    <div class="footer-text  footer-text__bottom">
+                        Общий срок проведения акции с 15 июня по 15 сентября 2021 года. Срок регистрации кодов с 15 июня
+                        по 15 августа 2021 года. Полные правила проведения акции, информацию об Организаторе акции, о
+                        количестве призов, сроках, месте и порядке их получения можно узнать на сайте
+                        промо.своярыбка.рф. Количество призов ограничено, их внешний вид может отличаться от
+                        изображённого на рекламных материалах. Организатор акции — АО «Оригинал».
+                    </div>
+                    <div class="row footer-bottom__row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 footer-bottom footer-bottom__policy">
+                            <a class="footer-text footer-bottom__text" href="">Политика конфиденциальности</a>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 footer-bottom footer-bottom__social">
+                            <div class="footer-social">
+                                <ul class="footer-list d-flex justify-content-center">
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__social">
+                                            <img src="img/inst.svg" alt="" class="footer-list__img">
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__social">
+                                            <img src="img/vk.svg" alt="" class="footer-list__img">
+                                        </a>
+                                    </li>
+                                    <li class="footer-list__item">
+                                        <a href="" class="footer-list__social">
+                                            <img src="img/fb.svg" alt="" class="footer-list__img">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6 footer-bottom footer-bottom__personal">
+                            <a class="footer-text footer-bottom__text" href="">Обработка персональных данных</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade bd-reg" id="registration" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg ">
+            <div class="modal-content reg-content">
+                <div class="modal-header reg-header">
+                    <h3 class="form-custom__element form-custom__title title reg__title reg-shadow">Регистрация</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div id="reg" class="reg-modal">
+                    <div id="reg-container" class="reg-container">
+                        <form class="form-custom location-form reg-form" action="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-12 reg-block">
+                                        <div class="form-custom__element reg-form__element">
+                                            <input placeholder="Фамилия" type="text"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element">
+                                            <input placeholder="Отчество" type="text"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element">
+                                            <input id="datepicker" placeholder="Дата рождения" type="text"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element">
+                                            <input placeholder="Номер телефона" type="tel"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-12 d-flex reg-block">
+                                        <div class="reg-radio reg-form__element">
+                                            <h5 class="reg-form__title">Пол:</h5>
+                                            <div class="form-check reg-check radio">
+                                                <input class="custom-radio form-check-input reg-form-check" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                <label class="form-check-label reg-check-label" for="flexRadioDefault1">Муж.</label>
+                                               </div>
+                                               <div class="form-check radio reg-check mr-0">
+                                                  <input class="custom-radio form-check-input reg-form-check" type="radio"
+                                         name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                  <label class="form-check-label reg-check-label" for="flexRadioDefault2">Жен.</label>
+                                               </div>
+                                        </div>
+                                        <div class="form-custom__element reg-form__element">
+                                            <input placeholder="Город проживания" type="text"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element">
+                                            <input placeholder="Email" type="email"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+
+                                        <div class="form-check reg-check__block">
+                                            <label class="checkbox checkbox_orange">
+                                                <input class="checkbox__input" type="checkbox" name="confirm2">
+                                                <span class="checkbox__text reg-check__text">Ознакомлен и согласен с
+                                                    <a href="">пользовательским соглашением</a> и <a href="">политикой
+                                                        конфиденциальности</a>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check reg-check__block">
+                                            <label class="checkbox checkbox_orange">
+                                                <input class="checkbox__input" type="checkbox" name="confirm2">
+                                                <span class="checkbox__text reg-check__text">Ознакомлен и согласен <a
+                                                    href="">правилами акции</a>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check reg-check__block">
+                                            <label class="checkbox checkbox_orange">
+                                                <input class="checkbox__input" type="checkbox" name="confirm2">
+                                                <span class="checkbox__text reg-check__text">Даю свое согласие на 
+                                                    <a href="">обработку персональных данных</a>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check reg-check__block">
+                                            <label class="checkbox checkbox_orange">
+                                                <input class="checkbox__input" type="checkbox" name="confirm2">
+                                                <span class="checkbox__text reg-check__text">Мне уже есть 18 лет</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-def btn-green form-custom__btn btn-orange reg-form__btn"
+                                data-dismiss="alert" aria-label="Close">
+                                Зарегистрироваться
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-reg" id="enter" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md ">
+            <div class="modal-content reg-content enter-content">
+                <div class="modal-header reg-header">
+                    <h3 class="form-custom__element form-custom__title title reg__title reg-shadow">Вход</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div id="ent" class="reg-modal">
+                    <div id="ent-container" class="reg-container">
+                        <form class="form-custom location-form enter-form" action="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 reg-block align-items-center">
+                                        <div class="form-custom__element reg-form__element">
+                                            <input placeholder="Номер телефона" type="tel"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                        <div class="form-custom__element reg-form__element">
+                                            <input placeholder="Пароль" type="password"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="enter-text enter-forget" href="#recovery" data-toggle="modal"
+                                data-modal="#custom-modal" data-dismiss="modal" aria-label="Close" role="button"
+                                aria-pressed="true"><u>Забыли пароль?</u></a>
+                            <button class="btn-def btn-green form-custom__btn btn-orange reg-form__btn"
+                                data-dismiss="alert" aria-label="Close">
+                                ВОЙТИ
+                            </button>
+                            <p class="enter-text">Если Вы впервые на сайте, то Вам необходимо</p>
+                            <a class="enter-link" href="#registration" data-toggle="modal" data-modal="#custom-modal"
+                                data-dismiss="modal" aria-label="Close" role="button"
+                                aria-pressed="true">Зарегистрироваться</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-reg" id="recovery" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md recovery-modal">
+            <div class="modal-content reg-content enter-content recovery-content">
+                <div class="modal-header reg-header recovery-header">
+                    <h3 class="form-custom__element form-custom__title title reg__title recovery__title reg-shadow">
+                        Восстановление
+                        пароля</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div id="recov" class="reg-modal">
+                    <div id="recov-container" class="reg-container">
+                        <form class="form-custom location-form enter-form" action="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 reg-block align-items-center">
+                                        <div class="form-custom__element reg-form__element recovery-form__element">
+                                            <input placeholder="Номер телефона" type="tel"
+                                                class="form-custom__input form-control reg-form__input">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-def btn-green form-custom__btn btn-orange recovery-form__btn"
+                                data-dismiss="alert" aria-label="Close">
+                                Восстановить пароль
+                            </button>
+                            <p class="enter-text recovery-text">Пароль отправлен в СМС сообщении на указанный номер
+                                телефона.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bd-reg" id="checked" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md recovery-modal">
+            <div class="modal-content reg-content check-content">
+                <div class="modal-header reg-header recovery-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div id="check" class="reg-modal">
+                    <div id="check-container" class="reg-container">
+                        <form class="form-custom location-form enter-form" action="">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 reg-block align-items-center">
+                                        <img src="img/check.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="check__title">Вы зарегистрировались в акции</h4>
+                            <p class="enter-text recovery-text">На указанный вами телефон (79008987676) отправлен пароль
+                                для доступа в личный кабинет</p>
+                            <button class="btn-def btn-green form-custom__btn btn-orange check__btn"
+                                data-dismiss="alert" aria-label="Close">
+                                OK
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- <script src="libs/js/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="libs/js/bootbox.min.js"></script>
+    <script src="libs/js/bootbox.locales.min.js"></script>
+    <script src="libs/js/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script> -->
+    <!-- <script>
+        $(document).ready(function () {
+            $.noConflict();
+
+            var table = $('#data__table').DataTable({
+                //      searching: false,
+                ordering: false,
+                autoWidth: false,
+                pageLength: 6
+            });
+
+            $('#search__number').on('keyup', function () {
+                table.search(this.value).draw();
+            });
+
+        });
+    </script> -->
+</body>
+
+</html>
